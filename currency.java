@@ -25,7 +25,25 @@ public class currency{
 
 
         // initialized text fields with 0 by default and setting bound to text field
-        
+
+        t1= new JTextField("0");
+        t1.setBounds(80,40,50,30);
+        t2= new JTextField("0");
+        t2.setBounds(240,40,50,30);
+
+        //create a button for INR
+        //create button for dollar
+        //create button to close
+        // and setting the bound
+
+        b1= new JButton("INR");
+        b1.setBounds(50,80,60,15);
+        b2= new JButton("Dollar");
+        b2.setBounds(190,80,60,30);
+        b3= new JButton("Close");
+        b3.setBounds(150,150.60,30);
+
+        // adding action listeners
 
     }
     
