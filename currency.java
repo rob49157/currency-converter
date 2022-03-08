@@ -43,10 +43,11 @@ public class currency{
 
         b1= new JButton("INR");
         b1.setBounds(50,80,60,15);
-        b2= new JButton("Dollar");
+        b2= new JButton("$");
         b2.setBounds(190,80,60,30);
         b3= new JButton("Close");
-        b3.setBounds(150,150.60,30);
+        b3.setBounds(150,150,60,30);
+        
 
         // adding action listeners
         b1.addActionListener(new ActionListener(){
@@ -67,8 +68,8 @@ public class currency{
         });
 
         // adding action listeners
-        b2.addActionListener(new ActionListner(){
-            public  void actionPerformed(ActionEvent e){
+        b2.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
                 
                 // converting to double
                 double d2= Double.parseDouble(t2.getText());
@@ -108,11 +109,12 @@ public class currency{
         f.setLayout(null);
         f.setSize(400,300);
         f.setVisible(true);
+    }
 
         //drive code 
         public static void main(String args[])
         {
-            converter()
+            converter();
         }
     
     
